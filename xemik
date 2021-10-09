@@ -1,0 +1,22 @@
+#!/bin/bash
+# This script creates the files and directories to start a new project
+# Usage : ./xemik new <project_path>
+
+if [ $1 = "new" ]
+then
+  if [ $2 ]
+  then
+    # get the project path argument
+    project_path=$2
+
+    # copy the files and directories to the project_path
+    mkdir $project_path
+
+    cp -R ./* $project_path
+  else
+    echo "Usage: ./xemik new <project_path>"
+  fi
+else
+  echo "Usage: ./xemik new <project_path>"
+fi
+

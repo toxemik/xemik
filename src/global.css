@@ -1,0 +1,27 @@
+/* This is the main CSS file
+** Place here the CSS code that can't be written in the components .mjs files
+*/
+
+.hello {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.markdown-body {
+	color: #333;
+}
+
+/*
+** for larger screens
+*/
+@media(min-width: 768px) {
+	.hello {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	.markdown-body {
+		max-width: 75vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
